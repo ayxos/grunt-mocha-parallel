@@ -23,7 +23,7 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-mocha-parallel');
+grunt.loadNpmTasks('grunt-mocha-parallel-extended');
 ```
 
 ## The "mocha_parallel" task
@@ -35,7 +35,7 @@ object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
-  mocha_parallel: {
+  mocha_parallel_extended: {
     options: {
       args: function(suiteName) {
         return [];

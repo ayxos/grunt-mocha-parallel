@@ -126,7 +126,7 @@ module.exports = function (grunt) {
   }
 
   var description = 'Run mocha test suites in parallel';
-  grunt.registerTask('mocha_parallel', description, function() {
+  grunt.registerTask('mocha_parallel_extended', description, function() {
     var done = this.async();
     var options = this.options({
       args: function() {

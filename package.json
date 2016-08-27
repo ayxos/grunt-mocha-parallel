@@ -1,7 +1,7 @@
 {
   "name": "grunt-mocha-parallel-extended",
   "description": "A Grunt task for running mocha test suites in parallel",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "homepage": "https://github.com/ayxos/grunt-mocha-parallel",
   "author": {
     "name": "Marco A. Pajares",
