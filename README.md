@@ -46,6 +46,7 @@ grunt.initConfig({
       },
       mocha: './node_modules/.bin/mocha',
       concurrency: os.cpus().length,
+      source: './path/*.js'
     },
   },
 });
@@ -105,6 +106,13 @@ Default value: `os.cpus().length * 1.5`
 
 Specifies the maxiumum number of concurrent test suites to run.
 
+#### options.source
+
+Type: `String`
+Default value: `./`
+
+The path to the test folder to invoke.
+
 ## Versioning
 
 Releases will be numbered with the follow format:
@@ -124,7 +132,3 @@ For more information on semantic versioning, please visit http://semver.org/.
 In lieu of a formal styleguide, take care to maintain the existing coding style.
 Add unit tests for any new or changed functionality. Lint and test your code
 using [Grunt](http://gruntjs.com/).
-
-## Release History
-
-_(Nothing yet)_
