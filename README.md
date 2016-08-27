@@ -2,6 +2,9 @@
 
 > A Grunt task for running mocha test suites in parallel
 
+## Intro
+this is a extended version of https://www.npmjs.com/package/grunt-mocha-parallel from https://www.npmjs.com/~jkp
+
 ## Getting Started
 
 This plugin requires Grunt `~0.4.5`
@@ -13,7 +16,7 @@ install and use Grunt plugins. Once you're familiar with that process, you may
 install this plugin with this command:
 
 ```shell
-npm install grunt-mocha-parallel --save-dev
+npm install grunt-mocha-parallel-extended --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with
