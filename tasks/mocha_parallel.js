@@ -10,7 +10,6 @@ module.exports = function (grunt) {
   function getTopLevelSuiteNames(mocha, scope, callback) {
     var enumerate_ui = path.resolve(__dirname, 'helpers', 'enumerate_ui.js');
     var command = (scope) ? mocha + ' ' + scope + ' -u ' + enumerate_ui : mocha + ' -u ' + enumerate_ui;
-    console.log('command', command);
     var enumerate = child_process.exec(command, function(code, stdout, stderr) {
       var names = stderr.replace(/^\s+|\s+$/g, '').split('\n');
       console.log('names', names);
@@ -126,9 +125,8 @@ module.exports = function (grunt) {
     }
   }
 
-  var description = 'Run mocha test suites in paarallel';
-  var test = 'test';
-  grunt.registerTask('mocha_parallel', description, function() {
+  var description = 'Run mocha test suites in parallel';
+  grunt.registerTask('mocha_parallel_extended', description, function() {
     var done = this.async();
     var options = this.options({
       args: function() {

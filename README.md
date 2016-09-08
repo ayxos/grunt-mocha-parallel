@@ -2,6 +2,9 @@
 
 > A Grunt task for running mocha test suites in parallel
 
+## Intro
+this is a extended version of https://www.npmjs.com/package/grunt-mocha-parallel from https://www.npmjs.com/~jkp
+
 ## Getting Started
 
 This plugin requires Grunt `~0.4.5`
@@ -13,14 +16,14 @@ install and use Grunt plugins. Once you're familiar with that process, you may
 install this plugin with this command:
 
 ```shell
-npm install grunt-mocha-parallel --save-dev
+npm install grunt-mocha-parallel-extended --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with
 this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-mocha-parallel');
+grunt.loadNpmTasks('grunt-mocha-parallel-extended');
 ```
 
 ## The "mocha_parallel" task
@@ -32,7 +35,7 @@ object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
-  mocha_parallel: {
+  mocha_parallel_extended: {
     options: {
       args: function(suiteName) {
         return [];
@@ -46,6 +49,7 @@ grunt.initConfig({
       },
       mocha: './node_modules/.bin/mocha',
       concurrency: os.cpus().length,
+      source: './path/*.js'
     },
   },
 });
@@ -105,6 +109,13 @@ Default value: `os.cpus().length * 1.5`
 
 Specifies the maxiumum number of concurrent test suites to run.
 
+#### options.source
+
+Type: `String`
+Default value: `./`
+
+The path to the test folder to invoke.
+
 ## Versioning
 
 Releases will be numbered with the follow format:
@@ -124,7 +135,3 @@ For more information on semantic versioning, please visit http://semver.org/.
 In lieu of a formal styleguide, take care to maintain the existing coding style.
 Add unit tests for any new or changed functionality. Lint and test your code
 using [Grunt](http://gruntjs.com/).
-
-## Release History
-
-_(Nothing yet)_

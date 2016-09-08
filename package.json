@@ -1,23 +1,23 @@
 {
-  "name": "grunt-mocha-parallel",
+  "name": "grunt-mocha-parallel-extended",
   "description": "A Grunt task for running mocha test suites in parallel",
-  "version": "0.1.7",
-  "homepage": "https://github.com/jkp/grunt-mocha-parallel",
+  "version": "0.2.4",
+  "homepage": "https://github.com/ayxos/grunt-mocha-parallel",
   "author": {
-    "name": "Jamie Kirkpatrick",
-    "email": "jkp@kirkconsulting.co.uk"
+    "name": "Marco A. Pajares",
+    "email": "marco.a.pajares@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jkp/grunt-mocha-parallel.git"
+    "url": "git://github.com/ayxos/grunt-mocha-parallel.git"
   },
   "bugs": {
-    "url": "https://github.com/jkp/grunt-mocha-parallel/issues"
+    "url": "https://github.com/ayxos/grunt-mocha-parallel/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/jkp/grunt-mocha-parallel/blob/master/LICENSE-MIT"
+      "url": "https://github.com/ayxos/grunt-mocha-parallel/blob/master/LICENSE-MIT"
     }
   ],
   "engines": {
